@@ -6,7 +6,7 @@
 		"dev": "turbo dev",
 		"lint": "turbo lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
-		"test": "echo \"Error: no test specified, still exiting with status 0 instead of 1\" && exit 0",
+		"test:e2e": "turbo run test:e2e --concurrency=1 --no-daemon",
 		"prepare": "husky"
 	},
 	"devDependencies": {

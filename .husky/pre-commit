@@ -10,3 +10,5 @@ esac
 export PATH="~/_/bin:$PATH"
 
 pnpm lint
+
+pnpm test:e2e
