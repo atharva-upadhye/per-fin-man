@@ -29,8 +29,7 @@ jobs:
         run: pnpm add -D playwright
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
-      - name: actions/checkout@v4
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: Install project dependencies
         run: pnpm install
       - name: Run E2E Playwright tests
